@@ -1,0 +1,92 @@
+/* TodoList 컨테이너 스타일 */
+div {
+  max-width: 550px;
+  
+  padding:20px;
+  margin: 0 auto;
+  border: 10px solid #f4a9a7;
+  border-radius: 5px;
+  background-color: rgb(203, 233, 250)
+}
+p{
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px dotted white;
+  border-radius: 5px;
+  width:150px;
+  text-align: center;
+
+}
+/* 입력 필드 스타일 */
+input[type="text"] {
+  margin:10px;
+  width: calc(100% - 90px);
+  padding: 10px;
+  margin-bottom:0;
+  border: 1px solid #190101;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+/* 버튼 공통 스타일 */
+button {
+  padding: 10px 15px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+}
+
+/* 추가 버튼 스타일 */
+button:hover {
+  background-color: #cccfce;
+}
+
+/* 삭제 버튼 스타일 */
+li button {
+
+  background-color: #ffdddd;
+  color: #ff5555;
+  display:inline-block;
+  float: right;
+
+}
+
+li button:hover {
+  background-color: #ffaaaa;
+}
+
+/* 할 일 리스트 스타일 */
+ul {
+  margin:10px;
+  list-style:decimal;
+  padding: 25px;
+
+  line-height: 3;
+  overflow: auto;
+  white-space: pre-line;
+
+}
+@font-face {
+  font-family: "Yeongdeok-Sea";
+  src: url("C:\Users\agile\Downloads\Yeongdeok-Sea.woff")format('woff');
+}
+
+/*
+li {
+  padding: 10px;
+  background-color: #d48181;
+  border-bottom: 10px solid #763c3c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+*/
+
+li:last-child {
+  border-bottom: none;
+}
